@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
 while true; do
-  echo -n .
+  date >> /tmp/date
   sleep 1
 done
