@@ -2,5 +2,7 @@
 
 set -euo pipefail
 
+BUILD_DIR=$1
+
 cp service        $BUILD_DIR
 cp service-wrappe $BUILD_DIR
