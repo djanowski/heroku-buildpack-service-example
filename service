@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-PID=$$
+N=$RANDOM
 
 while true; do
-  echo $PID >> /tmp/date
+  echo $N >> /tmp/date
   sleep 1
 done
