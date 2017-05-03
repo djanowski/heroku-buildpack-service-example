@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
+PID=$$
+
 while true; do
-  date >> /tmp/date
+  echo $PID >> /tmp/date
   sleep 1
 done
