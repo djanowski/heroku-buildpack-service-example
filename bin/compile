@@ -8,3 +8,5 @@ BUILD_DIR=$1
 
 cp service         $BUILD_DIR
 cp service-wrapper $BUILD_DIR
+
+cp -r .profile.d   $BUILD_DIR
