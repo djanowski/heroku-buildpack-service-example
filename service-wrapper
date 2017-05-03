@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+function graceful() {
+  echo
+  echo 'Received TERM, trying to stay alive a bit more...'
+  sleep 20
+  exit 0
+}
+
+stop_service() {
+  kill $SERVICE_PID
+}
+
+trap graceful TERM
+trap stop_service EXIT
+
+./service &
+
+SERVICE_PID=$!
+
+while true; do
+  sleep 1
+done
