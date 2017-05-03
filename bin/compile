@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
+set -veuo pipefail
+
+echo "Compiling custom buildpack..."
 
 BUILD_DIR=$1
 
